@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pratical Javascriptt</title>
+	</head>
+
+	<body>
+		<h1>TODO LIST</h1>
+		<script type="text/javascript">
+			var todoList = {
+				todos: ['item 1', 'item 2', 'item 3'],
+				displayTodos: function() {
+					console.log('My todos:', this.todos);
+				},
+				addTodo: function(todo){
+					this.todos.push(todo);
+					this.displayTodos();
+				},
+				changeTodo: function(position, newTodo){
+					this.todos[position] = newTodo;
+					this.displayTodos();
+				},
+				deleteTodo: function(position) {
+					this.todos.slice(position, 1);
+					this.displayTodos();
+				}
+			};			
+
+		</script>
+	</body>
+</html>
