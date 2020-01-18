@@ -16,13 +16,12 @@
 					if (this.todos.length === 0) {
 						console.log('Your Todo list is empty!')
 					} else {
-						console.log('My TODOS: ');
+						console.log('My Todos: \n');
 						for ( let i = 0; i < this.todos.length; i++ ) {
-							console.log(this.todos[i].todoText);
 							if (this.todos[i].completed === false ) {
-								console.log('Todo is not completed');
+								console.log('( )', this.todos[i].todoText);
 							} else {
-								console.log('Todo is complete');
+								console.log('(x)', this.todos[i].todoText);
 							}
 					
 						}
